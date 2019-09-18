@@ -1,0 +1,74 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed May  8 08:34:02 2019
+| Host         : DESKTOP-M082MKH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_level_control_sets_placed.rpt
+| Design       : Top_level
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    34 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            2 |
+| No           | No                    | Yes                    |             103 |           40 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               4 |            2 |
+| Yes          | No                    | Yes                    |              14 |            5 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+-------------------------------+------------------------------------+------------------+----------------+
+|        Clock Signal       |         Enable Signal         |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++---------------------------+-------------------------------+------------------------------------+------------------+----------------+
+|  Divisor_de_clock_i/temp2 |                               | reset_IBUF                         |                2 |              2 |
+|  Divisor_de_clock_i/CLK   |                               | FMS_i/flag                         |                2 |              2 |
+|  clk_IBUF_BUFG            | Mux_Display_i/an[3]_i_1_n_0   |                                    |                2 |              4 |
+|  Divisor_de_clock_i/CLK   | Contador_i/count_u[3]_i_1_n_0 | FMS_i/flag                         |                2 |              4 |
+|  Divisor_de_clock_i/CLK   | Contador_i/count_d[3]_i_1_n_0 | FMS_i/flag                         |                1 |              4 |
+|  Divisor_de_clock_i/temp2 |                               |                                    |                2 |              5 |
+|  clk_IBUF_BUFG            | Mux_Display_i/eqOp            | reset_IBUF                         |                2 |              6 |
+|  Divisor_de_clock_i/CLK   |                               | Piscador_i/led_dispara[13]_i_2_n_0 |                7 |             14 |
+|  clk_IBUF_BUFG            |                               | reset_IBUF                         |               29 |             85 |
++---------------------------+-------------------------------+------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     2 |
+| 4      |                     3 |
+| 5      |                     1 |
+| 6      |                     1 |
+| 14     |                     1 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+

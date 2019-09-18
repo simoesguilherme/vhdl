@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Apr  3 10:09:54 2019
+# Process ID: 2204
+# Current directory: C:/Users/Public/Documents/2019_1/Contador_updown_decada/Contador_updown_decada.runs/synth_1
+# Command line: vivado.exe -log display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source display.tcl
+# Log file: C:/Users/Public/Documents/2019_1/Contador_updown_decada/Contador_updown_decada.runs/synth_1/display.vds
+# Journal file: C:/Users/Public/Documents/2019_1/Contador_updown_decada/Contador_updown_decada.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source display.tcl -notrace

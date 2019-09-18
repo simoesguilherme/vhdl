@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_Algoritmo_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_Algoritmo" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="518000001fs"></ZoomEndTime>
+      <Cursor1Time time="60000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="112"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_Algoritmo/clk_in" type="logic">
+      <obj_property name="ElementShortName">clk_in</obj_property>
+      <obj_property name="ObjectShortName">clk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Algoritmo/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Algoritmo/AA" type="array">
+      <obj_property name="ElementShortName">AA[3:0]</obj_property>
+      <obj_property name="ObjectShortName">AA[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Algoritmo/chaves" type="array">
+      <obj_property name="ElementShortName">chaves[3:0]</obj_property>
+      <obj_property name="ObjectShortName">chaves[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Algoritmo/solicitado" type="logic">
+      <obj_property name="ElementShortName">solicitado</obj_property>
+      <obj_property name="ObjectShortName">solicitado</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Algoritmo/AD" type="array">
+      <obj_property name="ElementShortName">AD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">AD[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Algoritmo/liberado" type="logic">
+      <obj_property name="ElementShortName">liberado</obj_property>
+      <obj_property name="ObjectShortName">liberado</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_Algoritmo/clk_periodo_5hz" type="other">
+      <obj_property name="ElementShortName">clk_periodo_5hz</obj_property>
+      <obj_property name="ObjectShortName">clk_periodo_5hz</obj_property>
+   </wvobject>
+</wave_config>

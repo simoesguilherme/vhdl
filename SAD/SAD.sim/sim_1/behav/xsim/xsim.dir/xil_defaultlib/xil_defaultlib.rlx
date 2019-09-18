@@ -1,0 +1,18 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/glbl.v,1507081072,verilog,,,,glbl,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sim_1/new/test_bench.vhd,1526047978,vhdl,,,,test_bench,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/sim/ROM1.v,1557319103,verilog,,,,ROM1,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/sim/ROM2.v,1557319147,verilog,,C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/sim/ROM1.v,,ROM2,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/FSM.vhd,1557319665,vhdl,,,,fsm,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/I.vhd,1557319732,vhdl,,,,i,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/abs_dif.vhd,1557319713,vhdl,,,,abs_dif,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/comparador.vhd,1557319630,vhdl,,,,comparador,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/display.vhd,1557319632,vhdl,,,,display,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd,1557319681,vhdl,,,,operacional,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_SAD.vhd,1557319750,vhdl,,,,registrador_sad,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_soma.vhd,1557319629,vhdl,,,,registrador_soma,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/somador.vhd,1557319625,vhdl,,,,somador,,,,,,,,
+C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/top_level.vhd,1557319648,vhdl,,,,top_level,,,,,,,,

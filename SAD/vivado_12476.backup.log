@@ -1,0 +1,743 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue May  7 22:32:07 2019
+# Process ID: 12476
+# Current directory: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13100 C:\Users\Guilherme\Documents\UnB\Pratica de Eletronica Digital 2\2019_1\SAD\SAD.xpr
+# Log file: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/vivado.log
+# Journal file: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 696.695 ; gain = 67.406
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/ROM2.xci}]
+WARNING: [Vivado 12-818] No files matched 'C:/Users/Guilherme/Documents/UnB/Pratica'
+WARNING: [Vivado 12-818] No files matched 'de'
+WARNING: [Vivado 12-818] No files matched 'Eletronica'
+WARNING: [Vivado 12-818] No files matched 'Digital'
+WARNING: [Vivado 12-818] No files matched '2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/ROM2.xci'
+export_ip_user_files -of_objects [get_files {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/ROM2.xci}] -no_script -sync -force -quiet
+WARNING: [Vivado 12-818] No files matched 'C:/Users/Guilherme/Documents/UnB/Pratica'
+WARNING: [Vivado 12-818] No files matched 'de'
+WARNING: [Vivado 12-818] No files matched 'Eletronica'
+WARNING: [Vivado 12-818] No files matched 'Digital'
+WARNING: [Vivado 12-818] No files matched '2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/ROM2.xci'
+export_simulation -of_objects [get_files {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/ROM2.xci}}] -directory {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files} -ipstatic_source_dir {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/modelsim} {questa=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/questa} {riviera=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/riviera} {activehdl=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/ROM1.xci}]
+WARNING: [Vivado 12-818] No files matched 'C:/Users/Guilherme/Documents/UnB/Pratica'
+WARNING: [Vivado 12-818] No files matched 'de'
+WARNING: [Vivado 12-818] No files matched 'Eletronica'
+WARNING: [Vivado 12-818] No files matched 'Digital'
+WARNING: [Vivado 12-818] No files matched '2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/ROM1.xci'
+export_ip_user_files -of_objects [get_files {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/ROM1.xci}] -no_script -sync -force -quiet
+WARNING: [Vivado 12-818] No files matched 'C:/Users/Guilherme/Documents/UnB/Pratica'
+WARNING: [Vivado 12-818] No files matched 'de'
+WARNING: [Vivado 12-818] No files matched 'Eletronica'
+WARNING: [Vivado 12-818] No files matched 'Digital'
+WARNING: [Vivado 12-818] No files matched '2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/ROM1.xci'
+export_simulation -of_objects [get_files {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/ROM1.xci}}] -directory {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files} -ipstatic_source_dir {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/modelsim} {questa=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/questa} {riviera=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/riviera} {activehdl=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_bench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/ROM1.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/ROM1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/ROM2.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/ROM2.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/sim/ROM2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/sim/ROM1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj test_bench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/FSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FSM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/I.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity I
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/abs_dif.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity abs_dif
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/comparador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparador
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity display
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operacional
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_SAD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity registrador_SAD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_soma.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity registrador_soma
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/somador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity somador
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sim_1/new/test_bench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_bench
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 234d4df32413415fa3adb5d6aeaa8809 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_bench_behav xil_defaultlib.test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.I [i_default]
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM1
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM2
+Compiling architecture behavioral of entity xil_defaultlib.abs_dif [abs_dif_default]
+Compiling architecture behavioral of entity xil_defaultlib.comparador [comparador_default]
+Compiling architecture behavioral of entity xil_defaultlib.registrador_soma [registrador_soma_default]
+Compiling architecture behavioral of entity xil_defaultlib.somador [somador_default]
+Compiling architecture behavioral of entity xil_defaultlib.registrador_SAD [registrador_sad_default]
+Compiling architecture behavioral of entity xil_defaultlib.operacional [operacional_default]
+Compiling architecture behavioral of entity xil_defaultlib.display [display_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_bench
+Built simulation snapshot test_bench_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Guilherme/Documents/UnB/Pratica -notrace
+couldn't read file "C:/Users/Guilherme/Documents/UnB/Pratica": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue May  7 22:45:47 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 723.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_bench_behav -key {Behavioral:sim_1:Functional:test_bench} -tclbatch {test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 733.547 ; gain = 9.910
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:25 . Memory (MB): peak = 733.547 ; gain = 9.910
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27B4CA
+set_property PROGRAM.FILE {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27B4CA
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  8 08:25:54 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/runme.log
+[Wed May  8 08:25:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27B4CA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  8 08:33:47 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  8 08:35:10 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/runme.log
+[Wed May  8 08:35:10 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  8 09:33:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property -dict [list CONFIG.coefficient_file {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/ROM1.coe}] [get_ips ROM1]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/ROM1.coe' provided. It will be converted relative to IP Instance files '../../../../../ROM1.coe'
+generate_target all [get_files  {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/ROM1.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM1'...
+catch { config_ip_cache -export [get_ips -all ROM1] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/ROM1.xci}}] -no_script -sync -force -quiet
+reset_run ROM1_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/ROM1_synth_1
+
+launch_runs -jobs 2 ROM1_synth_1
+[Wed May  8 09:38:26 2019] Launched ROM1_synth_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/ROM1_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/ROM1.xci}}] -directory {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files} -ipstatic_source_dir {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/modelsim} {questa=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/questa} {riviera=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/riviera} {activehdl=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27B4CA
+set_property -dict [list CONFIG.coefficient_file {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/ROM2.coe}] [get_ips ROM2]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/ROM2.coe' provided. It will be converted relative to IP Instance files '../../../../../ROM2.coe'
+generate_target all [get_files  {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/ROM2.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ROM2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ROM2'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ROM2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ROM2'...
+catch { config_ip_cache -export [get_ips -all ROM2] }
+export_ip_user_files -of_objects [get_files {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/ROM2.xci}}] -no_script -sync -force -quiet
+reset_run ROM2_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/ROM2_synth_1
+
+launch_runs -jobs 2 ROM2_synth_1
+[Wed May  8 09:39:09 2019] Launched ROM2_synth_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/ROM2_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/ROM2.xci}}] -directory {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files} -ipstatic_source_dir {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/modelsim} {questa=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/questa} {riviera=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/riviera} {activehdl=C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  8 09:39:58 2019] Launched ROM1_synth_1, ROM2_synth_1, synth_1...
+Run output will be captured here:
+ROM1_synth_1: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/ROM1_synth_1/runme.log
+ROM2_synth_1: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/ROM2_synth_1/runme.log
+synth_1: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/runme.log
+[Wed May  8 09:39:58 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A27B4CA" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27B4CA
+set_property PROGRAM.FILE {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/top_level.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27B4CA
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  8 12:59:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/runme.log
+[Wed May  8 12:59:31 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/impl_1/runme.log
+open_project {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1471.625 ; gain = 3.641
+update_compile_order -fileset sources_1
+current_project SAD
+current_project Ex3_project_1
+current_project SAD
+current_project Ex3_project_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  8 14:41:29 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.runs/synth_1/runme.log
+[Wed May  8 14:41:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Wed May  8 14:47:29 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.runs/synth_1/runme.log
+[Wed May  8 14:47:29 2019] Launched impl_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 't_FIR3taps' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_FIR3taps_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 5b824ae741b948a291540a6a870ca1c9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot t_FIR3taps_behav xil_defaultlib.t_FIR3taps -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "t_FIR3taps_behav -key {Behavioral:sim_1:Functional:t_FIR3taps} -tclbatch {t_FIR3taps.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source t_FIR3taps.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 't_FIR3taps_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1495.102 ; gain = 4.035
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 't_FIR3taps' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj t_FIR3taps_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/new/FIR3taps.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tapFIR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/new/display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity display
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/new/hex2bcd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity deco_hex2bcd
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/imports/new/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/new/mux2x4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux2x4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/new/registrador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity registrador
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sim_1/new/t_FIR3taps.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity t_tapFIR
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sim_1/new/t_mux2x4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity t_mux2x4
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sim_1/new/t_ula.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity t_ula
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sim_1/new/t_uni_arit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity t_uni_arit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/imports/new/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ULA
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/new/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/imports/new/uni_arit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uni_arit
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/imports/new/uni_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity uni_logic
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 5b824ae741b948a291540a6a870ca1c9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot t_FIR3taps_behav xil_defaultlib.t_FIR3taps -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <a> does not exist in entity <mux2x4>.  Please compare the definition of block <mux2x4> to its component declaration and its instantion to detect the mismatch. [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/new/FIR3taps.vhd:47]
+ERROR: [VRFC 10-718] formal port <b> does not exist in entity <mux2x4>.  Please compare the definition of block <mux2x4> to its component declaration and its instantion to detect the mismatch. [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/new/FIR3taps.vhd:48]
+ERROR: [VRFC 10-718] formal port <c> does not exist in entity <mux2x4>.  Please compare the definition of block <mux2x4> to its component declaration and its instantion to detect the mismatch. [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/new/FIR3taps.vhd:49]
+ERROR: [VRFC 10-718] formal port <d> does not exist in entity <mux2x4>.  Please compare the definition of block <mux2x4> to its component declaration and its instantion to detect the mismatch. [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/new/FIR3taps.vhd:50]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit t_fir3taps in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1501.055 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_level' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_level_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 5b824ae741b948a291540a6a870ca1c9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_level_behav xil_defaultlib.top_level -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mux2x4 [mux2x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.registrador [registrador_default]
+Compiling architecture behavioral of entity xil_defaultlib.uni_arit [uni_arit_default]
+Compiling architecture behavioral of entity xil_defaultlib.uni_logic [uni_logic_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux [mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.ULA [ula_default]
+Compiling architecture behavioral of entity xil_defaultlib.tapFIR [tapfir_default]
+Compiling architecture arc_hex2bcd of entity xil_defaultlib.deco_hex2bcd [deco_hex2bcd_default]
+Compiling architecture behavioral of entity xil_defaultlib.display [display_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_level
+Built simulation snapshot top_level_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Guilherme/Documents/UnB/Pratica -notrace
+couldn't read file "C:/Users/Guilherme/Documents/UnB/Pratica": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Wed May  8 14:58:16 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_level_behav -key {Behavioral:sim_1:Functional:top_level} -tclbatch {top_level.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source top_level.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_level_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1505.570 ; gain = 3.820
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1505.570 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_level' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_level_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.srcs/sources_1/imports/new/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 5b824ae741b948a291540a6a870ca1c9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_level_behav xil_defaultlib.top_level -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mux2x4 [mux2x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.registrador [registrador_default]
+Compiling architecture behavioral of entity xil_defaultlib.uni_arit [uni_arit_default]
+Compiling architecture behavioral of entity xil_defaultlib.uni_logic [uni_logic_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux [mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.ULA [ula_default]
+Compiling architecture behavioral of entity xil_defaultlib.tapFIR [tapfir_default]
+Compiling architecture arc_hex2bcd of entity xil_defaultlib.deco_hex2bcd [deco_hex2bcd_default]
+Compiling architecture behavioral of entity xil_defaultlib.display [display_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_level
+Built simulation snapshot top_level_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_level_behav -key {Behavioral:sim_1:Functional:top_level} -tclbatch {top_level.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source top_level.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_level_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1525.441 ; gain = 19.871
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_bench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/ROM1.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/ROM1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/ROM2.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/ROM2.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/ROM1.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim/ROM2.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM2/sim/ROM2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/ip/ROM1/sim/ROM1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM1
+"xvhdl --incr --relax -prj test_bench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/FSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FSM
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/I.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity I
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/abs_dif.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity abs_dif
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/comparador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comparador
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity display
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operacional
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_SAD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity registrador_SAD
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_soma.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity registrador_soma
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/somador.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity somador
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/top_level.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top_level
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 234d4df32413415fa3adb5d6aeaa8809 --incr --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_bench_behav xil_defaultlib.test_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.I [i_default]
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM1
+Compiling module dist_mem_gen_v8_0_12.dist_mem_gen_v8_0_12(C_FAMILY="a...
+Compiling module xil_defaultlib.ROM2
+Compiling architecture behavioral of entity xil_defaultlib.abs_dif [abs_dif_default]
+Compiling architecture behavioral of entity xil_defaultlib.comparador [comparador_default]
+Compiling architecture behavioral of entity xil_defaultlib.registrador_soma [registrador_soma_default]
+Compiling architecture behavioral of entity xil_defaultlib.somador [somador_default]
+Compiling architecture behavioral of entity xil_defaultlib.registrador_SAD [registrador_sad_default]
+Compiling architecture behavioral of entity xil_defaultlib.operacional [operacional_default]
+Compiling architecture behavioral of entity xil_defaultlib.display [display_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_level [top_level_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_bench
+Built simulation snapshot test_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_bench_behav -key {Behavioral:sim_1:Functional:test_bench} -tclbatch {test_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source test_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1525.441 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 15:31:24 2019...

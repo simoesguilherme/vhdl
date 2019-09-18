@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jun  4 17:58:52 2019
+# Process ID: 11388
+# Current directory: C:/Users/Guilherme/Documents/UnB/Pratica_de_Eletronica_Digital_2/2019_1/Picoblaze_Multiplicador_e_Deslocador/Picoblaze_multiplicador_deslocador
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18940 C:\Users\Guilherme\Documents\UnB\Pratica_de_Eletronica_Digital_2\2019_1\Picoblaze_Multiplicador_e_Deslocador\Picoblaze_multiplicador_deslocador\Picoblaze_multiplicador_deslocador.xpr
+# Log file: C:/Users/Guilherme/Documents/UnB/Pratica_de_Eletronica_Digital_2/2019_1/Picoblaze_Multiplicador_e_Deslocador/Picoblaze_multiplicador_deslocador/vivado.log
+# Journal file: C:/Users/Guilherme/Documents/UnB/Pratica_de_Eletronica_Digital_2/2019_1/Picoblaze_Multiplicador_e_Deslocador/Picoblaze_multiplicador_deslocador\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Guilherme/Documents/UnB/Pratica_de_Eletronica_Digital_2/2019_1/Picoblaze_Multiplicador_e_Deslocador/Picoblaze_multiplicador_deslocador/Picoblaze_multiplicador_deslocador.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Guilherme/Documents/UnB/Pratica_de_Eletronica_Digital_2/2019_1/Picoblaze_Multiplicador_e_Deslocador/Picoblaze_multiplicador_deslocador'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Picoblaze_Multiplicador_e_Deslocador/Picoblaze_multiplicador_deslocador' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 731.754 ; gain = 40.234
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'jtag_loader_6(Behavioral)' found in library 'xil_defaultlib'
+Duplicate found in file C:/Users/Guilherme/Documents/UnB/Pratica_de_Eletronica_Digital_2/2019_1/Picoblaze_Multiplicador_e_Deslocador/Arquivos/desl/deslocador.vhd
+	(Active) Duplicate found at line 2988 of file C:/Users/Guilherme/Documents/UnB/Pratica_de_Eletronica_Digital_2/2019_1/Picoblaze_Multiplicador_e_Deslocador/Arquivos/mult/multiplicador.vhd
+[Tue Jun  4 18:01:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/Guilherme/Documents/UnB/Pratica_de_Eletronica_Digital_2/2019_1/Picoblaze_Multiplicador_e_Deslocador/Picoblaze_multiplicador_deslocador/Picoblaze_multiplicador_deslocador.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  4 18:24:21 2019...

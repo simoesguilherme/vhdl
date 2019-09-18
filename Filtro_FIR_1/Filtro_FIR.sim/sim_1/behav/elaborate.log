@@ -1,0 +1,24 @@
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto 5b824ae741b948a291540a6a870ca1c9 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot t_FIR3taps_behav xil_defaultlib.t_FIR3taps -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mux2x4 [mux2x4_default]
+Compiling architecture behavioral of entity xil_defaultlib.registrador [registrador_default]
+Compiling architecture behavioral of entity xil_defaultlib.uni_arit [uni_arit_default]
+Compiling architecture behavioral of entity xil_defaultlib.uni_logic [uni_logic_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux [mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.ULA [ula_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR3taps [fir3taps_default]
+Compiling architecture behavioral of entity xil_defaultlib.t_fir3taps
+Built simulation snapshot t_FIR3taps_behav

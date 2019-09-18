@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr 22 21:46:30 2019
+# Process ID: 10324
+# Current directory: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11640 C:\Users\Guilherme\Documents\UnB\Pratica de Eletronica Digital 2\2019_1\FMS_Sistema_de_alarme\FMS_Sistema_de_alarme.xpr
+# Log file: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme/vivado.log
+# Journal file: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme/FMS_Sistema_de_alarme.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme'
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-564] A project save was requested while parsing the project. To prevent a partially loaded project from being committed to disk, this save will not occur.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 695.957 ; gain = 61.422
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 1099.504 ; gain = 381.438
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme/.Xil/Vivado-10324-DESKTOP-M082MKH/dcp1/Top_level.xdc]
+Finished Parsing XDC File [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme/.Xil/Vivado-10324-DESKTOP-M082MKH/dcp1/Top_level.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1665.102 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1665.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1733.121 ; gain = 181.973
+report_power -name {power_1}
+Command: report_power -name power_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+1 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+close_design
+close_design
+close_project
+open_project {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme/FMS_Sistema_de_alarme.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme'
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-564] A project save was requested while parsing the project. To prevent a partially loaded project from being committed to disk, this save will not occur.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 22 22:16:05 2019...

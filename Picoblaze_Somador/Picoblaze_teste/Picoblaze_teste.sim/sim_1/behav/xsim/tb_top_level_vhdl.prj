@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Picoblaze_teste.srcs/sources_1/new/Top_level.vhd" \
+"../../../../../../../../../Downloads/Teste picoblaze/kcpsm6.vhd" \
+"../../../../../../../../../Downloads/Teste picoblaze/teste.vhd" \
+"../../../../Picoblaze_teste.srcs/sim_1/new/tb_Top_level.vhd" \
+
+# Do not sort compile order
+nosort

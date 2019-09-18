@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr 22 21:46:30 2019
+# Process ID: 10324
+# Current directory: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11640 C:\Users\Guilherme\Documents\UnB\Pratica de Eletronica Digital 2\2019_1\FMS_Sistema_de_alarme\FMS_Sistema_de_alarme.xpr
+# Log file: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme/vivado.log
+# Journal file: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme/FMS_Sistema_de_alarme.xpr}
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+open_run impl_1
+report_power -name {power_1}
+close_design
+close_design
+close_project
+open_project {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/FMS_Sistema_de_alarme/FMS_Sistema_de_alarme.xpr}
+update_compile_order -fileset sources_1

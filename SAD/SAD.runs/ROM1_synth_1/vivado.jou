@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May  8 09:38:30 2019
+# Process ID: 16356
+# Current directory: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/ROM1_synth_1
+# Command line: vivado.exe -log ROM1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM1.tcl
+# Log file: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/ROM1_synth_1/ROM1.vds
+# Journal file: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/ROM1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ROM1.tcl -notrace

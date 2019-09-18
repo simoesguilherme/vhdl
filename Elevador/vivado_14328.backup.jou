@@ -1,0 +1,150 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed May 22 09:54:09 2019
+# Process ID: 14328
+# Current directory: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16292 C:\Users\Guilherme\Documents\UnB\Pratica de Eletronica Digital 2\2019_1\Elevador\Elevador.xpr
+# Log file: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/vivado.log
+# Journal file: C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.xpr}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new
+file mkdir C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new
+file mkdir C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new
+file mkdir C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new
+file mkdir C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new
+file mkdir {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new}
+close [ open {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_top_level.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_top_level.vhd}}
+update_compile_order -fileset sim_1
+launch_simulation
+source Top_Level.tcl
+run all
+run 20 s
+relaunch_sim
+run 20 s
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_temporizador.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_temporizador.vhd}}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_top_level.tcl
+close_sim
+launch_simulation
+source tb_top_level.tcl
+close_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_temporizador [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_temporizador.tcl
+add_wave {{/tb_temporizador/utt/counter2}} 
+add_wave {{/tb_temporizador/utt/counter4}} 
+add_wave {{/tb_temporizador/utt/counter}} 
+relaunch_sim
+relaunch_sim
+run 20 s
+relaunch_sim
+run 20 s
+relaunch_sim
+run 20 s
+close_sim
+launch_simulation
+source tb_temporizador.tcl
+run 20 s
+run 20 s
+run 20 s
+relaunch_sim
+run 20 s
+run 20 s
+run all
+relaunch_sim
+run 20 s
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_Contador_U_D.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_Contador_U_D.vhd}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_Contador_U_D [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_Contador_U_D.tcl
+relaunch_sim
+run 20 s
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+add_wave {{/tb_Contador_U_D/utt/atual_u}} 
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_Comparador.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_Comparador.vhd}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_Comparador [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_Comparador.tcl
+relaunch_sim
+save_wave_config {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/tb_Comparador_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/tb_Comparador_behav.wcfg}}
+set_property xsim.view {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/tb_Comparador_behav.wcfg}} [get_filesets sim_1]
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_Algoritmo.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_Algoritmo.vhd}}
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/tb_Comparador_behav.wcfg}
+source tb_Comparador.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_Algoritmo [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/tb_Comparador_behav.wcfg}
+source tb_Algoritmo.tcl
+relaunch_sim
+add_wave {{/tb_Algoritmo/clk_in}} {{/tb_Algoritmo/reset}} {{/tb_Algoritmo/AA}} {{/tb_Algoritmo/chaves}} {{/tb_Algoritmo/solicitado}} {{/tb_Algoritmo/AD}} {{/tb_Algoritmo/liberado}} {{/tb_Algoritmo/clk_periodo_5hz}} 
+relaunch_sim
+save_wave_config {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/tb_Comparador_behav.wcfg}
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_FMS.vhd} w ]
+add_files -fileset sim_1 {{C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/Elevador/Elevador.srcs/sim_1/new/tb_FMS.vhd}}
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1

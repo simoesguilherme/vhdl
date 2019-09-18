@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed May  9 10:58:24 2018
+# Process ID: 14156
+# Current directory: C:/Users/Note/Downloads/Ex3_project_1/Ex3_project_1.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/Note/Downloads/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim.dir/t_FIR3taps_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Note/Downloads/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Note/Downloads/Ex3_project_1/Ex3_project_1.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Note/Downloads/Ex3_project_1/Ex3_project_1.sim/sim_1/behav/xsim.dir/t_FIR3taps_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,1407 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Jun  5 09:22:08 2019
+| Host         : DESKTOP-M082MKH running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file Super_top_level_timing_summary_routed.rpt -rpx Super_top_level_timing_summary_routed.rpx -warn_on_violation
+| Design       : Super_top_level
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.20 2017-11-01
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 139 register/latch pins with no clock driven by root clock pin: Divisor_de_clock_i/temp2_reg/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: Divisor_de_clock_i/temp_reg/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 466 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 36 pins that are not constrained for maximum delay due to constant clock. (MEDIUM)
+
+
+5. checking no_input_delay
+--------------------------
+ There are 17 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 19 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      2.340        0.000                      0                  519        0.057        0.000                      0                  519        3.750        0.000                       0                   206  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin         2.340        0.000                      0                  519        0.057        0.000                      0                  519        3.750        0.000                       0                   206  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack        2.340ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.057ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.750ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             2.340ns  (required time - arrival time)
+  Source:                 Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/data_path_loop[0].small_spm.spm_flop/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.532ns  (logic 3.292ns (43.707%)  route 4.240ns (56.293%))
+  Logic Levels:           3  (LUT5=1 RAMD32=1 RAMD64E=1)
+  Clock Path Skew:        -0.011ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.858ns = ( 14.858 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.130ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.609     5.130    Top_multiplicador_i/program_rom/CLK
+    RAMB36_X2Y2          RAMB36E1                                     r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y2          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[4])
+                                                      2.454     7.584 r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/DOADO[4]
+                         net (fo=14, routed)          1.441     9.025    Top_multiplicador_i/processor/lower_reg_banks/ADDRA0
+    SLICE_X60Y10         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.150     9.175 r  Top_multiplicador_i/processor/lower_reg_banks/RAMA/O
+                         net (fo=3, routed)           0.986    10.161    Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/I0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I0_O)        0.356    10.517 r  Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/LUT5/O
+                         net (fo=27, routed)          1.215    11.732    Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/ADDRA0
+    SLICE_X64Y10         RAMD64E (Prop_ramd64e_RADR0_O)
+                                                      0.332    12.064 r  Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/RAMA/O
+                         net (fo=1, routed)           0.598    12.662    Top_multiplicador_i/processor/spm_ram_data_0
+    SLICE_X65Y10         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[0].small_spm.spm_flop/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.517    14.858    Top_multiplicador_i/processor/CLK
+    SLICE_X65Y10         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[0].small_spm.spm_flop/C
+                         clock pessimism              0.260    15.118    
+                         clock uncertainty           -0.035    15.083    
+    SLICE_X65Y10         FDRE (Setup_fdre_C_D)       -0.081    15.002    Top_multiplicador_i/processor/data_path_loop[0].small_spm.spm_flop
+  -------------------------------------------------------------------
+                         required time                         15.002    
+                         arrival time                         -12.662    
+  -------------------------------------------------------------------
+                         slack                                  2.340    
+
+Slack (MET) :             2.419ns  (required time - arrival time)
+  Source:                 Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/data_path_loop[2].small_spm.spm_flop/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.466ns  (logic 3.292ns (44.091%)  route 4.174ns (55.909%))
+  Logic Levels:           3  (LUT5=1 RAMD32=1 RAMD64E=1)
+  Clock Path Skew:        -0.012ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.857ns = ( 14.857 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.130ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.609     5.130    Top_multiplicador_i/program_rom/CLK
+    RAMB36_X2Y2          RAMB36E1                                     r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y2          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[4])
+                                                      2.454     7.584 r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/DOADO[4]
+                         net (fo=14, routed)          1.441     9.025    Top_multiplicador_i/processor/lower_reg_banks/ADDRA0
+    SLICE_X60Y10         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.150     9.175 r  Top_multiplicador_i/processor/lower_reg_banks/RAMA/O
+                         net (fo=3, routed)           0.986    10.161    Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/I0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I0_O)        0.356    10.517 r  Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/LUT5/O
+                         net (fo=27, routed)          1.207    11.724    Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/ADDRC0
+    SLICE_X64Y10         RAMD64E (Prop_ramd64e_RADR0_O)
+                                                      0.332    12.056 r  Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/RAMC/O
+                         net (fo=1, routed)           0.540    12.596    Top_multiplicador_i/processor/spm_ram_data_2
+    SLICE_X65Y11         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[2].small_spm.spm_flop/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.516    14.857    Top_multiplicador_i/processor/CLK
+    SLICE_X65Y11         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[2].small_spm.spm_flop/C
+                         clock pessimism              0.260    15.117    
+                         clock uncertainty           -0.035    15.082    
+    SLICE_X65Y11         FDRE (Setup_fdre_C_D)       -0.067    15.015    Top_multiplicador_i/processor/data_path_loop[2].small_spm.spm_flop
+  -------------------------------------------------------------------
+                         required time                         15.015    
+                         arrival time                         -12.596    
+  -------------------------------------------------------------------
+                         slack                                  2.419    
+
+Slack (MET) :             2.430ns  (required time - arrival time)
+  Source:                 Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/arith_carry_flop/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.583ns  (logic 4.042ns (53.301%)  route 3.541ns (46.699%))
+  Logic Levels:           5  (CARRY4=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.013ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.856ns = ( 14.856 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.130ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.609     5.130    Top_multiplicador_i/program_rom/CLK
+    RAMB36_X2Y2          RAMB36E1                                     r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y2          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[6])
+                                                      2.454     7.584 r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/DOADO[6]
+                         net (fo=14, routed)          1.446     9.029    Top_multiplicador_i/processor/upper_reg_banks/ADDRA2
+    SLICE_X60Y11         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.148     9.177 r  Top_multiplicador_i/processor/upper_reg_banks/RAMA/O
+                         net (fo=3, routed)           1.101    10.278    Top_multiplicador_i/processor/data_path_loop[4].output_data.sy_kk_mux_lut/I0
+    SLICE_X61Y11         LUT5 (Prop_lut5_I0_O)        0.358    10.636 r  Top_multiplicador_i/processor/data_path_loop[4].output_data.sy_kk_mux_lut/LUT5/O
+                         net (fo=18, routed)          0.995    11.631    Top_multiplicador_i/processor/data_path_loop[4].arith_logical_lut/I0
+    SLICE_X62Y11         LUT6 (Prop_lut6_I0_O)        0.327    11.958 r  Top_multiplicador_i/processor/data_path_loop[4].arith_logical_lut/LUT6/O
+                         net (fo=1, routed)           0.000    11.958    Top_multiplicador_i/processor/half_arith_logical_4
+    SLICE_X62Y11         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.490 r  Top_multiplicador_i/processor/data_path_loop[4].upper_arith_logical.arith_logical_muxcy_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000    12.490    Top_multiplicador_i/processor/CI
+    SLICE_X62Y12         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.223    12.713 r  Top_multiplicador_i/processor/arith_carry_xorcy_CARRY4/O[0]
+                         net (fo=1, routed)           0.000    12.713    Top_multiplicador_i/processor/arith_carry_value
+    SLICE_X62Y12         FDRE                                         r  Top_multiplicador_i/processor/arith_carry_flop/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.515    14.856    Top_multiplicador_i/processor/CLK
+    SLICE_X62Y12         FDRE                                         r  Top_multiplicador_i/processor/arith_carry_flop/C
+                         clock pessimism              0.260    15.116    
+                         clock uncertainty           -0.035    15.081    
+    SLICE_X62Y12         FDRE (Setup_fdre_C_D)        0.062    15.143    Top_multiplicador_i/processor/arith_carry_flop
+  -------------------------------------------------------------------
+                         required time                         15.143    
+                         arrival time                         -12.713    
+  -------------------------------------------------------------------
+                         slack                                  2.430    
+
+Slack (MET) :             2.439ns  (required time - arrival time)
+  Source:                 Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/data_path_loop[1].small_spm.spm_flop/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.445ns  (logic 3.292ns (44.216%)  route 4.153ns (55.784%))
+  Logic Levels:           3  (LUT5=1 RAMD32=1 RAMD64E=1)
+  Clock Path Skew:        -0.013ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.856ns = ( 14.856 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.130ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.609     5.130    Top_multiplicador_i/program_rom/CLK
+    RAMB36_X2Y2          RAMB36E1                                     r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y2          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[4])
+                                                      2.454     7.584 r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/DOADO[4]
+                         net (fo=14, routed)          1.441     9.025    Top_multiplicador_i/processor/lower_reg_banks/ADDRA0
+    SLICE_X60Y10         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.150     9.175 r  Top_multiplicador_i/processor/lower_reg_banks/RAMA/O
+                         net (fo=3, routed)           0.986    10.161    Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/I0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I0_O)        0.356    10.517 r  Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/LUT5/O
+                         net (fo=27, routed)          1.205    11.722    Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/ADDRB0
+    SLICE_X64Y10         RAMD64E (Prop_ramd64e_RADR0_O)
+                                                      0.332    12.054 r  Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/RAMB/O
+                         net (fo=1, routed)           0.521    12.575    Top_multiplicador_i/processor/spm_ram_data_1
+    SLICE_X65Y12         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[1].small_spm.spm_flop/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.515    14.856    Top_multiplicador_i/processor/CLK
+    SLICE_X65Y12         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[1].small_spm.spm_flop/C
+                         clock pessimism              0.260    15.116    
+                         clock uncertainty           -0.035    15.081    
+    SLICE_X65Y12         FDRE (Setup_fdre_C_D)       -0.067    15.014    Top_multiplicador_i/processor/data_path_loop[1].small_spm.spm_flop
+  -------------------------------------------------------------------
+                         required time                         15.014    
+                         arrival time                         -12.575    
+  -------------------------------------------------------------------
+                         slack                                  2.439    
+
+Slack (MET) :             2.450ns  (required time - arrival time)
+  Source:                 Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/internal_reset_flop/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.535ns  (logic 4.248ns (56.380%)  route 3.287ns (43.620%))
+  Logic Levels:           6  (CARRY4=2 LUT5=2 LUT6=2)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.860ns = ( 14.860 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.130ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.609     5.130    Top_multiplicador_i/program_rom/CLK
+    RAMB36_X2Y2          RAMB36E1                                     r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y2          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[13])
+                                                      2.454     7.584 r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/DOADO[13]
+                         net (fo=26, routed)          1.454     9.038    Top_multiplicador_i/processor/move_type_lut/I1
+    SLICE_X59Y8          LUT6 (Prop_lut6_I1_O)        0.124     9.162 f  Top_multiplicador_i/processor/move_type_lut/LUT6/O
+                         net (fo=4, routed)           0.643     9.805    Top_multiplicador_i/processor/push_pop_lut/I2
+    SLICE_X59Y7          LUT5 (Prop_lut5_I2_O)        0.150     9.955 f  Top_multiplicador_i/processor/push_pop_lut/LUT5/O
+                         net (fo=5, routed)           0.328    10.283    Top_multiplicador_i/processor/pop_stack
+    SLICE_X61Y6          LUT5 (Prop_lut5_I1_O)        0.326    10.609 r  Top_multiplicador_i/processor/stack_loop[1].upper_stack.stack_pointer_lut/O
+                         net (fo=1, routed)           0.000    10.609    Top_multiplicador_i/processor/half_pointer_value_1
+    SLICE_X61Y6          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.159 r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.stack_muxcy_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000    11.159    Top_multiplicador_i/processor/stack_pointer_carry_3
+    SLICE_X61Y7          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    11.430 r  Top_multiplicador_i/processor/stack_loop[4].upper_stack.stack_muxcy_CARRY4/CO[0]
+                         net (fo=2, routed)           0.861    12.291    Top_multiplicador_i/processor/reset_lut/I2
+    SLICE_X62Y6          LUT6 (Prop_lut6_I2_O)        0.373    12.664 r  Top_multiplicador_i/processor/reset_lut/LUT6/O
+                         net (fo=1, routed)           0.000    12.664    Top_multiplicador_i/processor/internal_reset_value
+    SLICE_X62Y6          FDRE                                         r  Top_multiplicador_i/processor/internal_reset_flop/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.519    14.860    Top_multiplicador_i/processor/CLK
+    SLICE_X62Y6          FDRE                                         r  Top_multiplicador_i/processor/internal_reset_flop/C
+                         clock pessimism              0.260    15.120    
+                         clock uncertainty           -0.035    15.085    
+    SLICE_X62Y6          FDRE (Setup_fdre_C_D)        0.029    15.114    Top_multiplicador_i/processor/internal_reset_flop
+  -------------------------------------------------------------------
+                         required time                         15.114    
+                         arrival time                         -12.664    
+  -------------------------------------------------------------------
+                         slack                                  2.450    
+
+Slack (MET) :             2.470ns  (required time - arrival time)
+  Source:                 Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/run_flop/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.561ns  (logic 4.274ns (56.530%)  route 3.287ns (43.470%))
+  Logic Levels:           6  (CARRY4=2 LUT5=3 LUT6=1)
+  Clock Path Skew:        -0.009ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.860ns = ( 14.860 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.130ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.609     5.130    Top_multiplicador_i/program_rom/CLK
+    RAMB36_X2Y2          RAMB36E1                                     r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y2          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[13])
+                                                      2.454     7.584 r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/DOADO[13]
+                         net (fo=26, routed)          1.454     9.038    Top_multiplicador_i/processor/move_type_lut/I1
+    SLICE_X59Y8          LUT6 (Prop_lut6_I1_O)        0.124     9.162 f  Top_multiplicador_i/processor/move_type_lut/LUT6/O
+                         net (fo=4, routed)           0.643     9.805    Top_multiplicador_i/processor/push_pop_lut/I2
+    SLICE_X59Y7          LUT5 (Prop_lut5_I2_O)        0.150     9.955 f  Top_multiplicador_i/processor/push_pop_lut/LUT5/O
+                         net (fo=5, routed)           0.328    10.283    Top_multiplicador_i/processor/pop_stack
+    SLICE_X61Y6          LUT5 (Prop_lut5_I1_O)        0.326    10.609 r  Top_multiplicador_i/processor/stack_loop[1].upper_stack.stack_pointer_lut/O
+                         net (fo=1, routed)           0.000    10.609    Top_multiplicador_i/processor/half_pointer_value_1
+    SLICE_X61Y6          CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.550    11.159 r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.stack_muxcy_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000    11.159    Top_multiplicador_i/processor/stack_pointer_carry_3
+    SLICE_X61Y7          CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.271    11.430 f  Top_multiplicador_i/processor/stack_loop[4].upper_stack.stack_muxcy_CARRY4/CO[0]
+                         net (fo=2, routed)           0.861    12.291    Top_multiplicador_i/processor/reset_lut/I2
+    SLICE_X62Y6          LUT5 (Prop_lut5_I2_O)        0.399    12.690 r  Top_multiplicador_i/processor/reset_lut/LUT5/O
+                         net (fo=1, routed)           0.000    12.690    Top_multiplicador_i/processor/run_value
+    SLICE_X62Y6          FDRE                                         r  Top_multiplicador_i/processor/run_flop/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.519    14.860    Top_multiplicador_i/processor/CLK
+    SLICE_X62Y6          FDRE                                         r  Top_multiplicador_i/processor/run_flop/C
+                         clock pessimism              0.260    15.120    
+                         clock uncertainty           -0.035    15.085    
+    SLICE_X62Y6          FDRE (Setup_fdre_C_D)        0.075    15.160    Top_multiplicador_i/processor/run_flop
+  -------------------------------------------------------------------
+                         required time                         15.160    
+                         arrival time                         -12.690    
+  -------------------------------------------------------------------
+                         slack                                  2.470    
+
+Slack (MET) :             2.490ns  (required time - arrival time)
+  Source:                 Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/data_path_loop[3].small_spm.spm_flop/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.416ns  (logic 3.292ns (44.392%)  route 4.124ns (55.608%))
+  Logic Levels:           3  (LUT5=1 RAMD32=1 RAMD64E=1)
+  Clock Path Skew:        -0.013ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.856ns = ( 14.856 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.130ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.609     5.130    Top_multiplicador_i/program_rom/CLK
+    RAMB36_X2Y2          RAMB36E1                                     r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y2          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[4])
+                                                      2.454     7.584 r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/DOADO[4]
+                         net (fo=14, routed)          1.441     9.025    Top_multiplicador_i/processor/lower_reg_banks/ADDRA0
+    SLICE_X60Y10         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.150     9.175 r  Top_multiplicador_i/processor/lower_reg_banks/RAMA/O
+                         net (fo=3, routed)           0.986    10.161    Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/I0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I0_O)        0.356    10.517 r  Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/LUT5/O
+                         net (fo=27, routed)          1.226    11.743    Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/ADDRD0
+    SLICE_X64Y10         RAMD64E (Prop_ramd64e_RADR0_O)
+                                                      0.332    12.075 r  Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/RAMD/O
+                         net (fo=1, routed)           0.471    12.546    Top_multiplicador_i/processor/spm_ram_data_3
+    SLICE_X64Y12         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[3].small_spm.spm_flop/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.515    14.856    Top_multiplicador_i/processor/CLK
+    SLICE_X64Y12         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[3].small_spm.spm_flop/C
+                         clock pessimism              0.260    15.116    
+                         clock uncertainty           -0.035    15.081    
+    SLICE_X64Y12         FDRE (Setup_fdre_C_D)       -0.045    15.036    Top_multiplicador_i/processor/data_path_loop[3].small_spm.spm_flop
+  -------------------------------------------------------------------
+                         required time                         15.036    
+                         arrival time                         -12.546    
+  -------------------------------------------------------------------
+                         slack                                  2.490    
+
+Slack (MET) :             2.566ns  (required time - arrival time)
+  Source:                 Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/data_path_loop[5].arith_logical_flop/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.448ns  (logic 4.158ns (55.826%)  route 3.290ns (44.174%))
+  Logic Levels:           5  (CARRY4=2 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.012ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.857ns = ( 14.857 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.130ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.609     5.130    Top_multiplicador_i/program_rom/CLK
+    RAMB36_X2Y2          RAMB36E1                                     r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y2          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[4])
+                                                      2.454     7.584 r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/DOADO[4]
+                         net (fo=14, routed)          1.441     9.025    Top_multiplicador_i/processor/lower_reg_banks/ADDRA0
+    SLICE_X60Y10         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.150     9.175 r  Top_multiplicador_i/processor/lower_reg_banks/RAMA/O
+                         net (fo=3, routed)           0.986    10.161    Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/I0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I0_O)        0.356    10.517 r  Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/LUT5/O
+                         net (fo=27, routed)          0.863    11.380    Top_multiplicador_i/processor/data_path_loop[0].arith_logical_lut/I0
+    SLICE_X62Y10         LUT6 (Prop_lut6_I0_O)        0.332    11.712 r  Top_multiplicador_i/processor/data_path_loop[0].arith_logical_lut/LUT6/O
+                         net (fo=1, routed)           0.000    11.712    Top_multiplicador_i/processor/half_arith_logical_0
+    SLICE_X62Y10         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532    12.244 r  Top_multiplicador_i/processor/data_path_loop[0].lsb_arith_logical.arith_logical_muxcy_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000    12.244    Top_multiplicador_i/processor/carry_arith_logical_3
+    SLICE_X62Y11         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334    12.578 r  Top_multiplicador_i/processor/data_path_loop[4].upper_arith_logical.arith_logical_muxcy_CARRY4/O[1]
+                         net (fo=1, routed)           0.000    12.578    Top_multiplicador_i/processor/arith_logical_value_5
+    SLICE_X62Y11         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[5].arith_logical_flop/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.516    14.857    Top_multiplicador_i/processor/CLK
+    SLICE_X62Y11         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[5].arith_logical_flop/C
+                         clock pessimism              0.260    15.117    
+                         clock uncertainty           -0.035    15.082    
+    SLICE_X62Y11         FDRE (Setup_fdre_C_D)        0.062    15.144    Top_multiplicador_i/processor/data_path_loop[5].arith_logical_flop
+  -------------------------------------------------------------------
+                         required time                         15.144    
+                         arrival time                         -12.578    
+  -------------------------------------------------------------------
+                         slack                                  2.566    
+
+Slack (MET) :             2.580ns  (required time - arrival time)
+  Source:                 Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/data_path_loop[7].arith_logical_flop/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.434ns  (logic 3.893ns (52.365%)  route 3.541ns (47.635%))
+  Logic Levels:           4  (CARRY4=1 LUT5=1 LUT6=1 RAMD32=1)
+  Clock Path Skew:        -0.012ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.857ns = ( 14.857 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.130ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.609     5.130    Top_multiplicador_i/program_rom/CLK
+    RAMB36_X2Y2          RAMB36E1                                     r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y2          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[6])
+                                                      2.454     7.584 r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/DOADO[6]
+                         net (fo=14, routed)          1.446     9.029    Top_multiplicador_i/processor/upper_reg_banks/ADDRA2
+    SLICE_X60Y11         RAMD32 (Prop_ramd32_RADR2_O)
+                                                      0.148     9.177 r  Top_multiplicador_i/processor/upper_reg_banks/RAMA/O
+                         net (fo=3, routed)           1.101    10.278    Top_multiplicador_i/processor/data_path_loop[4].output_data.sy_kk_mux_lut/I0
+    SLICE_X61Y11         LUT5 (Prop_lut5_I0_O)        0.358    10.636 r  Top_multiplicador_i/processor/data_path_loop[4].output_data.sy_kk_mux_lut/LUT5/O
+                         net (fo=18, routed)          0.995    11.631    Top_multiplicador_i/processor/data_path_loop[4].arith_logical_lut/I0
+    SLICE_X62Y11         LUT6 (Prop_lut6_I0_O)        0.327    11.958 r  Top_multiplicador_i/processor/data_path_loop[4].arith_logical_lut/LUT6/O
+                         net (fo=1, routed)           0.000    11.958    Top_multiplicador_i/processor/half_arith_logical_4
+    SLICE_X62Y11         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.606    12.564 r  Top_multiplicador_i/processor/data_path_loop[4].upper_arith_logical.arith_logical_muxcy_CARRY4/O[3]
+                         net (fo=1, routed)           0.000    12.564    Top_multiplicador_i/processor/arith_logical_value_7
+    SLICE_X62Y11         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[7].arith_logical_flop/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.516    14.857    Top_multiplicador_i/processor/CLK
+    SLICE_X62Y11         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[7].arith_logical_flop/C
+                         clock pessimism              0.260    15.117    
+                         clock uncertainty           -0.035    15.082    
+    SLICE_X62Y11         FDRE (Setup_fdre_C_D)        0.062    15.144    Top_multiplicador_i/processor/data_path_loop[7].arith_logical_flop
+  -------------------------------------------------------------------
+                         required time                         15.144    
+                         arrival time                         -12.564    
+  -------------------------------------------------------------------
+                         slack                                  2.580    
+
+Slack (MET) :             2.619ns  (required time - arrival time)
+  Source:                 Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/data_path_loop[4].small_spm.spm_flop/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.251ns  (logic 3.292ns (45.401%)  route 3.959ns (54.599%))
+  Logic Levels:           3  (LUT5=1 RAMD32=1 RAMD64E=1)
+  Clock Path Skew:        -0.013ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.856ns = ( 14.856 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.130ns
+    Clock Pessimism Removal (CPR):    0.260ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.458     1.458 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.967     3.425    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.609     5.130    Top_multiplicador_i/program_rom/CLK
+    RAMB36_X2Y2          RAMB36E1                                     r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X2Y2          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[4])
+                                                      2.454     7.584 r  Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/DOADO[4]
+                         net (fo=14, routed)          1.441     9.025    Top_multiplicador_i/processor/lower_reg_banks/ADDRA0
+    SLICE_X60Y10         RAMD32 (Prop_ramd32_RADR0_O)
+                                                      0.150     9.175 r  Top_multiplicador_i/processor/lower_reg_banks/RAMA/O
+                         net (fo=3, routed)           0.986    10.161    Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/I0
+    SLICE_X59Y10         LUT5 (Prop_lut5_I0_O)        0.356    10.517 r  Top_multiplicador_i/processor/data_path_loop[0].output_data.sy_kk_mux_lut/LUT5/O
+                         net (fo=27, routed)          1.065    11.583    Top_multiplicador_i/processor/data_path_loop[4].small_spm.small_spm_ram.spm_ram/ADDRA0
+    SLICE_X64Y11         RAMD64E (Prop_ramd64e_RADR0_O)
+                                                      0.332    11.915 r  Top_multiplicador_i/processor/data_path_loop[4].small_spm.small_spm_ram.spm_ram/RAMA/O
+                         net (fo=1, routed)           0.466    12.381    Top_multiplicador_i/processor/spm_ram_data_4
+    SLICE_X62Y12         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[4].small_spm.spm_flop/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    W5                                                0.000    10.000 r  clk (IN)
+                         net (fo=0)                   0.000    10.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         1.388    11.388 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           1.862    13.250    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.341 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         1.515    14.856    Top_multiplicador_i/processor/CLK
+    SLICE_X62Y12         FDRE                                         r  Top_multiplicador_i/processor/data_path_loop[4].small_spm.spm_flop/C
+                         clock pessimism              0.260    15.116    
+                         clock uncertainty           -0.035    15.081    
+    SLICE_X62Y12         FDRE (Setup_fdre_C_D)       -0.081    15.000    Top_multiplicador_i/processor/data_path_loop[4].small_spm.spm_flop
+  -------------------------------------------------------------------
+                         required time                         15.000    
+                         arrival time                         -12.381    
+  -------------------------------------------------------------------
+                         slack                                  2.619    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/stack_ram_low/RAMA/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.141ns (37.065%)  route 0.239ns (62.935%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.594     1.477    Top_multiplicador_i/processor/CLK
+    SLICE_X61Y6          FDRE                                         r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y6          FDRE (Prop_fdre_C_Q)         0.141     1.618 r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/Q
+                         net (fo=30, routed)          0.239     1.858    Top_multiplicador_i/processor/stack_ram_low/ADDRD0
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMA/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.864     1.991    Top_multiplicador_i/processor/stack_ram_low/WCLK
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMA/CLK
+                         clock pessimism             -0.501     1.490    
+    SLICE_X60Y6          RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.800    Top_multiplicador_i/processor/stack_ram_low/RAMA
+  -------------------------------------------------------------------
+                         required time                         -1.800    
+                         arrival time                           1.858    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/stack_ram_low/RAMA_D1/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.141ns (37.065%)  route 0.239ns (62.935%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.594     1.477    Top_multiplicador_i/processor/CLK
+    SLICE_X61Y6          FDRE                                         r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y6          FDRE (Prop_fdre_C_Q)         0.141     1.618 r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/Q
+                         net (fo=30, routed)          0.239     1.858    Top_multiplicador_i/processor/stack_ram_low/ADDRD0
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMA_D1/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.864     1.991    Top_multiplicador_i/processor/stack_ram_low/WCLK
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMA_D1/CLK
+                         clock pessimism             -0.501     1.490    
+    SLICE_X60Y6          RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.800    Top_multiplicador_i/processor/stack_ram_low/RAMA_D1
+  -------------------------------------------------------------------
+                         required time                         -1.800    
+                         arrival time                           1.858    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/stack_ram_low/RAMB/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.141ns (37.065%)  route 0.239ns (62.935%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.594     1.477    Top_multiplicador_i/processor/CLK
+    SLICE_X61Y6          FDRE                                         r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y6          FDRE (Prop_fdre_C_Q)         0.141     1.618 r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/Q
+                         net (fo=30, routed)          0.239     1.858    Top_multiplicador_i/processor/stack_ram_low/ADDRD0
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMB/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.864     1.991    Top_multiplicador_i/processor/stack_ram_low/WCLK
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMB/CLK
+                         clock pessimism             -0.501     1.490    
+    SLICE_X60Y6          RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.800    Top_multiplicador_i/processor/stack_ram_low/RAMB
+  -------------------------------------------------------------------
+                         required time                         -1.800    
+                         arrival time                           1.858    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/stack_ram_low/RAMB_D1/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.141ns (37.065%)  route 0.239ns (62.935%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.594     1.477    Top_multiplicador_i/processor/CLK
+    SLICE_X61Y6          FDRE                                         r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y6          FDRE (Prop_fdre_C_Q)         0.141     1.618 r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/Q
+                         net (fo=30, routed)          0.239     1.858    Top_multiplicador_i/processor/stack_ram_low/ADDRD0
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMB_D1/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.864     1.991    Top_multiplicador_i/processor/stack_ram_low/WCLK
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMB_D1/CLK
+                         clock pessimism             -0.501     1.490    
+    SLICE_X60Y6          RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.800    Top_multiplicador_i/processor/stack_ram_low/RAMB_D1
+  -------------------------------------------------------------------
+                         required time                         -1.800    
+                         arrival time                           1.858    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/stack_ram_low/RAMC/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.141ns (37.065%)  route 0.239ns (62.935%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.594     1.477    Top_multiplicador_i/processor/CLK
+    SLICE_X61Y6          FDRE                                         r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y6          FDRE (Prop_fdre_C_Q)         0.141     1.618 r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/Q
+                         net (fo=30, routed)          0.239     1.858    Top_multiplicador_i/processor/stack_ram_low/ADDRD0
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMC/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.864     1.991    Top_multiplicador_i/processor/stack_ram_low/WCLK
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMC/CLK
+                         clock pessimism             -0.501     1.490    
+    SLICE_X60Y6          RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.800    Top_multiplicador_i/processor/stack_ram_low/RAMC
+  -------------------------------------------------------------------
+                         required time                         -1.800    
+                         arrival time                           1.858    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/stack_ram_low/RAMC_D1/WADR0
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.141ns (37.065%)  route 0.239ns (62.935%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.594     1.477    Top_multiplicador_i/processor/CLK
+    SLICE_X61Y6          FDRE                                         r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y6          FDRE (Prop_fdre_C_Q)         0.141     1.618 r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/Q
+                         net (fo=30, routed)          0.239     1.858    Top_multiplicador_i/processor/stack_ram_low/ADDRD0
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMC_D1/WADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.864     1.991    Top_multiplicador_i/processor/stack_ram_low/WCLK
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMC_D1/CLK
+                         clock pessimism             -0.501     1.490    
+    SLICE_X60Y6          RAMD32 (Hold_ramd32_CLK_WADR0)
+                                                      0.310     1.800    Top_multiplicador_i/processor/stack_ram_low/RAMC_D1
+  -------------------------------------------------------------------
+                         required time                         -1.800    
+                         arrival time                           1.858    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/stack_ram_low/RAMD/ADR0
+                            (rising edge-triggered cell RAMS32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.141ns (37.065%)  route 0.239ns (62.935%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.594     1.477    Top_multiplicador_i/processor/CLK
+    SLICE_X61Y6          FDRE                                         r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y6          FDRE (Prop_fdre_C_Q)         0.141     1.618 r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/Q
+                         net (fo=30, routed)          0.239     1.858    Top_multiplicador_i/processor/stack_ram_low/ADDRD0
+    SLICE_X60Y6          RAMS32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMD/ADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.864     1.991    Top_multiplicador_i/processor/stack_ram_low/WCLK
+    SLICE_X60Y6          RAMS32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMD/CLK
+                         clock pessimism             -0.501     1.490    
+    SLICE_X60Y6          RAMS32 (Hold_rams32_CLK_ADR0)
+                                                      0.310     1.800    Top_multiplicador_i/processor/stack_ram_low/RAMD
+  -------------------------------------------------------------------
+                         required time                         -1.800    
+                         arrival time                           1.858    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/stack_ram_low/RAMD_D1/ADR0
+                            (rising edge-triggered cell RAMS32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.380ns  (logic 0.141ns (37.065%)  route 0.239ns (62.935%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.594     1.477    Top_multiplicador_i/processor/CLK
+    SLICE_X61Y6          FDRE                                         r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y6          FDRE (Prop_fdre_C_Q)         0.141     1.618 r  Top_multiplicador_i/processor/stack_loop[0].lsb_stack.pointer_flop/Q
+                         net (fo=30, routed)          0.239     1.858    Top_multiplicador_i/processor/stack_ram_low/ADDRD0
+    SLICE_X60Y6          RAMS32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMD_D1/ADR0
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.864     1.991    Top_multiplicador_i/processor/stack_ram_low/WCLK
+    SLICE_X60Y6          RAMS32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMD_D1/CLK
+                         clock pessimism             -0.501     1.490    
+    SLICE_X60Y6          RAMS32 (Hold_rams32_CLK_ADR0)
+                                                      0.310     1.800    Top_multiplicador_i/processor/stack_ram_low/RAMD_D1
+  -------------------------------------------------------------------
+                         required time                         -1.800    
+                         arrival time                           1.858    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+Slack (MET) :             0.060ns  (arrival time - required time)
+  Source:                 Top_multiplicador_i/processor/address_loop[4].pc_flop/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/stack_ram_high/RAMA/I
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.220ns  (logic 0.141ns (64.051%)  route 0.079ns (35.949%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.990ns
+    Source Clock Delay      (SCD):    1.476ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.593     1.476    Top_multiplicador_i/processor/CLK
+    SLICE_X61Y9          FDRE                                         r  Top_multiplicador_i/processor/address_loop[4].pc_flop/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y9          FDRE (Prop_fdre_C_Q)         0.141     1.617 r  Top_multiplicador_i/processor/address_loop[4].pc_flop/Q
+                         net (fo=3, routed)           0.079     1.696    Top_multiplicador_i/processor/stack_ram_high/DIA0
+    SLICE_X60Y9          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_high/RAMA/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.863     1.990    Top_multiplicador_i/processor/stack_ram_high/WCLK
+    SLICE_X60Y9          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_high/RAMA/CLK
+                         clock pessimism             -0.501     1.489    
+    SLICE_X60Y9          RAMD32 (Hold_ramd32_CLK_I)
+                                                      0.147     1.636    Top_multiplicador_i/processor/stack_ram_high/RAMA
+  -------------------------------------------------------------------
+                         required time                         -1.636    
+                         arrival time                           1.696    
+  -------------------------------------------------------------------
+                         slack                                  0.060    
+
+Slack (MET) :             0.104ns  (arrival time - required time)
+  Source:                 Top_multiplicador_i/processor/stack_loop[1].upper_stack.pointer_flop/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Top_multiplicador_i/processor/stack_ram_low/RAMA/WADR1
+                            (rising edge-triggered cell RAMD32 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.426ns  (logic 0.141ns (33.086%)  route 0.285ns (66.914%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.991ns
+    Source Clock Delay      (SCD):    1.477ns
+    Clock Pessimism Removal (CPR):    0.501ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.858    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.594     1.477    Top_multiplicador_i/processor/CLK
+    SLICE_X61Y6          FDRE                                         r  Top_multiplicador_i/processor/stack_loop[1].upper_stack.pointer_flop/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y6          FDRE (Prop_fdre_C_Q)         0.141     1.618 r  Top_multiplicador_i/processor/stack_loop[1].upper_stack.pointer_flop/Q
+                         net (fo=30, routed)          0.285     1.903    Top_multiplicador_i/processor/stack_ram_low/ADDRD1
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMA/WADR1
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    W5                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    W5                   IBUF (Prop_ibuf_I_O)         0.414     0.414 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.099    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.128 r  clk_IBUF_BUFG_inst/O
+                         net (fo=205, routed)         0.864     1.991    Top_multiplicador_i/processor/stack_ram_low/WCLK
+    SLICE_X60Y6          RAMD32                                       r  Top_multiplicador_i/processor/stack_ram_low/RAMA/CLK
+                         clock pessimism             -0.501     1.490    
+    SLICE_X60Y6          RAMD32 (Hold_ramd32_CLK_WADR1)
+                                                      0.309     1.799    Top_multiplicador_i/processor/stack_ram_low/RAMA
+  -------------------------------------------------------------------
+                         required time                         -1.799    
+                         arrival time                           1.903    
+  -------------------------------------------------------------------
+                         slack                                  0.104    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y2    Top_multiplicador_i/program_rom/ram_2k_generate.akv7.kcpsm6_rom/CLKARDCLK
+Min Period        n/a     BUFG/I              n/a            2.155         10.000      7.845      BUFGCTRL_X0Y0  clk_IBUF_BUFG_inst/I
+Min Period        n/a     FDCE/C              n/a            1.000         10.000      9.000      SLICE_X32Y43   Divisor_de_clock_i/counter2_reg[21]/C
+Min Period        n/a     FDCE/C              n/a            1.000         10.000      9.000      SLICE_X32Y43   Divisor_de_clock_i/counter2_reg[22]/C
+Min Period        n/a     FDCE/C              n/a            1.000         10.000      9.000      SLICE_X32Y43   Divisor_de_clock_i/counter2_reg[23]/C
+Min Period        n/a     FDCE/C              n/a            1.000         10.000      9.000      SLICE_X31Y43   Divisor_de_clock_i/counter2_reg[24]/C
+Min Period        n/a     FDCE/C              n/a            1.000         10.000      9.000      SLICE_X32Y44   Divisor_de_clock_i/counter2_reg[25]/C
+Min Period        n/a     FDCE/C              n/a            1.000         10.000      9.000      SLICE_X32Y44   Divisor_de_clock_i/counter2_reg[26]/C
+Min Period        n/a     FDCE/C              n/a            1.000         10.000      9.000      SLICE_X32Y44   Divisor_de_clock_i/counter2_reg[27]/C
+Min Period        n/a     FDCE/C              n/a            1.000         10.000      9.000      SLICE_X31Y44   Divisor_de_clock_i/counter2_reg[28]/C
+Low Pulse Width   Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X64Y10   Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/RAMA/CLK
+Low Pulse Width   Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X64Y10   Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/RAMB/CLK
+Low Pulse Width   Fast    RAMD64E/CLK         n/a            1.250         5.000       3.750      SLICE_X64Y10   Top_multiplicador_i/processor/data_path_loop[0].small_spm.small_spm_ram.spm_ram/RAMC/CLK
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y10   Top_multiplicador_i/processor/lower_reg_banks/RAMB_D1/CLK
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y10   Top_multiplicador_i/processor/lower_reg_banks/RAMC/CLK
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y10   Top_multiplicador_i/processor/lower_reg_banks/RAMC_D1/CLK
+Low Pulse Width   Fast    RAMS32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y10   Top_multiplicador_i/processor/lower_reg_banks/RAMD/CLK
+Low Pulse Width   Fast    RAMS32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y10   Top_multiplicador_i/processor/lower_reg_banks/RAMD_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y11   Top_multiplicador_i/processor/upper_reg_banks/RAMA/CLK
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y11   Top_multiplicador_i/processor/upper_reg_banks/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y6    Top_multiplicador_i/processor/stack_ram_low/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y6    Top_multiplicador_i/processor/stack_ram_low/RAMA_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y6    Top_multiplicador_i/processor/stack_ram_low/RAMB/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y6    Top_multiplicador_i/processor/stack_ram_low/RAMB_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y6    Top_multiplicador_i/processor/stack_ram_low/RAMC/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y6    Top_multiplicador_i/processor/stack_ram_low/RAMC_D1/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y6    Top_multiplicador_i/processor/stack_ram_low/RAMD/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y6    Top_multiplicador_i/processor/stack_ram_low/RAMD_D1/CLK
+High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y10   Top_multiplicador_i/processor/lower_reg_banks/RAMB_D1/CLK
+High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         5.000       3.750      SLICE_X60Y10   Top_multiplicador_i/processor/lower_reg_banks/RAMC/CLK
+
+
+

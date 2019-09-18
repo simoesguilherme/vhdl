@@ -1,0 +1,34 @@
+            ; =========================================================
+            ; routine: mult_soft
+            ; function: 8-bit unsigned multiplier using
+            ; shift-and-add algorithm
+            ; input register:
+            ; s1: multiplicand
+            ; s2: multiplier
+            ; output register:
+            ; s4: upper byte of product
+            ; s5: lower byte of product
+            ; temp register: s0
+            ; =========================================================
+            CONSTANT multiplicand, 00 ; multiplicand = 00H
+            CONSTANT multiplier, 01   ; multiplier = 01H
+            CONSTANT display, 03      ; display = 02H
+      mult: 
+            INPUT s1, multiplicand    ; multiplicand
+            INPUT s2, multiplier      ; multiplier
+ mult_soft: 
+            LOAD s4, 00               ; clear s4
+            LOAD s0, 08               ; initialize loop index
+ mult_loop: 
+            SR0 s2                    ; shift lsb to carry
+            JUMP NC, shift_prod       ; lsb is 0
+            ADD s4, s1                ; lsb is 1
+shift_prod: 
+            SRA s4                    ; shift upper byte right,
+            ; carry to MSB, LSB to carry
+            SRA s5                    ; shift lower byte right,
+            ; lsb of s4 to MSB of s5
+            SUB s0, 01                ; dec loop index
+            JUMP NZ, mult_loop        ; repeat until i=0
+            OUTPUT s5, display        ; display <= s5
+            JUMP mult                 ; jump to mult rotine

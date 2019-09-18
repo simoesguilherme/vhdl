@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Filtro_FIR.srcs/sources_1/new/FIR3taps.vhd" \
+"../../../../Filtro_FIR.srcs/sources_1/imports/new/mux.vhd" \
+"../../../../Filtro_FIR.srcs/sources_1/new/mux2x4.vhd" \
+"../../../../Filtro_FIR.srcs/sources_1/new/registrador.vhd" \
+"../../../../Filtro_FIR.srcs/sources_1/imports/new/top_level.vhd" \
+"../../../../Filtro_FIR.srcs/sources_1/imports/new/uni_arit.vhd" \
+"../../../../Filtro_FIR.srcs/sources_1/imports/new/uni_logic.vhd" \
+"../../../../Filtro_FIR.srcs/sim_1/new/t_FIR3taps.vhd" \
+
+# Do not sort compile order
+nosort

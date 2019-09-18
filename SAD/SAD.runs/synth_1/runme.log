@@ -1,0 +1,399 @@
+
+*** Running vivado
+    with args -log top_level.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source top_level.tcl -notrace
+Command: synth_design -top top_level -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1032 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 353.375 ; gain = 97.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_level' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/top_level.vhd:23]
+INFO: [Synth 8-3491] module 'FSM' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/FSM.vhd:13' bound to instance 'U1' of component 'FSM' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/top_level.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/FSM.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (1#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/FSM.vhd:26]
+INFO: [Synth 8-3491] module 'operacional' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:13' bound to instance 'U2' of component 'operacional' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/top_level.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'operacional' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:26]
+INFO: [Synth 8-3491] module 'I' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/I.vhd:14' bound to instance 'U1' of component 'I' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'I' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/I.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'I' (2#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/I.vhd:21]
+INFO: [Synth 8-3491] module 'ROM1' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/.Xil/Vivado-7896-DESKTOP-M082MKH/realtime/ROM1_stub.v:6' bound to instance 'U2' of component 'ROM1' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'ROM1' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/.Xil/Vivado-7896-DESKTOP-M082MKH/realtime/ROM1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ROM1' (3#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/.Xil/Vivado-7896-DESKTOP-M082MKH/realtime/ROM1_stub.v:6]
+INFO: [Synth 8-3491] module 'ROM2' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/.Xil/Vivado-7896-DESKTOP-M082MKH/realtime/ROM2_stub.v:6' bound to instance 'U3' of component 'ROM2' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'ROM2' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/.Xil/Vivado-7896-DESKTOP-M082MKH/realtime/ROM2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ROM2' (4#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/.Xil/Vivado-7896-DESKTOP-M082MKH/realtime/ROM2_stub.v:6]
+INFO: [Synth 8-3491] module 'abs_dif' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/abs_dif.vhd:14' bound to instance 'U4' of component 'abs_dif' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'abs_dif' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/abs_dif.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'abs_dif' (5#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/abs_dif.vhd:20]
+INFO: [Synth 8-3491] module 'comparador' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/comparador.vhd:13' bound to instance 'U5' of component 'comparador' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'comparador' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/comparador.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'comparador' (6#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/comparador.vhd:18]
+INFO: [Synth 8-3491] module 'registrador_soma' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_soma.vhd:13' bound to instance 'U6' of component 'registrador_soma' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'registrador_soma' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_soma.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'registrador_soma' (7#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_soma.vhd:22]
+INFO: [Synth 8-3491] module 'somador' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/somador.vhd:14' bound to instance 'U7' of component 'somador' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'somador' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/somador.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'somador' (8#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/somador.vhd:20]
+INFO: [Synth 8-3491] module 'registrador_SAD' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_SAD.vhd:13' bound to instance 'U8' of component 'registrador_SAD' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'registrador_SAD' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_SAD.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'registrador_SAD' (9#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_SAD.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'operacional' (10#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/operacional.vhd:26]
+INFO: [Synth 8-3491] module 'display' declared at 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/display.vhd:13' bound to instance 'U3' of component 'display' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/top_level.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/display.vhd:20]
+INFO: [Synth 8-226] default block is never used [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/display.vhd:64]
+INFO: [Synth 8-226] default block is never used [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/display.vhd:87]
+INFO: [Synth 8-226] default block is never used [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/display.vhd:110]
+INFO: [Synth 8-226] default block is never used [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/display.vhd:133]
+INFO: [Synth 8-256] done synthesizing module 'display' (11#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/display.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'top_level' (12#1) [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/top_level.vhd:23]
+WARNING: [Synth 8-3331] design operacional has unconnected port AB_rd
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 405.531 ; gain = 149.699
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 405.531 ; gain = 149.699
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/.Xil/Vivado-7896-DESKTOP-M082MKH/dcp2/ROM1_in_context.xdc] for cell 'U2/U2'
+Finished Parsing XDC File [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/.Xil/Vivado-7896-DESKTOP-M082MKH/dcp2/ROM1_in_context.xdc] for cell 'U2/U2'
+Parsing XDC File [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/.Xil/Vivado-7896-DESKTOP-M082MKH/dcp3/ROM2_in_context.xdc] for cell 'U2/U3'
+Finished Parsing XDC File [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/.Xil/Vivado-7896-DESKTOP-M082MKH/dcp3/ROM2_in_context.xdc] for cell 'U2/U3'
+Parsing XDC File [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/constrs_1/imports/VHDL/constraints_basys3.xdc]
+Finished Parsing XDC File [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/constrs_1/imports/VHDL/constraints_basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/constrs_1/imports/VHDL/constraints_basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 739.914 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 739.914 ; gain = 484.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 739.914 ; gain = 484.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U2/U2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for U2/U3. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 739.914 ; gain = 484.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'FSM'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element cont_reg was removed.  [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/I.vhd:31]
+INFO: [Synth 8-5545] ROM "cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                            00001 |                              000
+                      s1 |                            00010 |                              001
+                      s2 |                            00100 |                              010
+                      s3 |                            01000 |                              011
+                      s4 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 739.914 ; gain = 484.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      5 Bit        Muxes := 1     
+Module I 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+Module abs_dif 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module registrador_soma 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module somador 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+Module registrador_SAD 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "U3/cont" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "U3/clk2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element U2/U6/Q_reg was removed.  [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/registrador_soma.vhd:30]
+WARNING: [Synth 8-6014] Unused sequential element U2/U1/cont_reg was removed.  [C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.srcs/sources_1/new/I.vhd:31]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 739.914 ; gain = 484.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 739.914 ; gain = 484.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 755.719 ; gain = 499.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 758.020 ; gain = 502.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 758.020 ; gain = 502.188
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 758.020 ; gain = 502.188
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 758.020 ; gain = 502.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 758.020 ; gain = 502.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 758.020 ; gain = 502.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 758.020 ; gain = 502.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ROM1          |         1|
+|2     |ROM2          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |ROM1   |     1|
+|2     |ROM2   |     1|
+|3     |BUFG   |     2|
+|4     |CARRY4 |    27|
+|5     |LUT1   |    14|
+|6     |LUT2   |    29|
+|7     |LUT3   |     3|
+|8     |LUT4   |    54|
+|9     |LUT5   |    31|
+|10    |LUT6   |    57|
+|11    |FDCE   |     4|
+|12    |FDPE   |     1|
+|13    |FDRE   |   117|
+|14    |IBUF   |     3|
+|15    |OBUF   |    27|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |   385|
+|2     |  U1     |FSM              |    10|
+|3     |  U2     |operacional      |   144|
+|4     |    U1   |I                |    19|
+|5     |    U4   |abs_dif          |    20|
+|6     |    U6   |registrador_soma |    45|
+|7     |    U8   |registrador_SAD  |    44|
+|8     |  U3     |display          |   199|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 758.020 ; gain = 502.188
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 758.020 ; gain = 167.805
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 758.020 ; gain = 502.188
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 758.020 ; gain = 513.656
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Guilherme/Documents/UnB/Pratica de Eletronica Digital 2/2019_1/SAD/SAD.runs/synth_1/top_level.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_level_utilization_synth.rpt -pb top_level_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 758.020 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 13:00:36 2019...

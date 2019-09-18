@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Top_level_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Top_level_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="501669999fs"></ZoomStartTime>
+      <ZoomEndTime time="590070000fs"></ZoomEndTime>
+      <Cursor1Time time="71500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="142"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/Top_level_tb/x_clk" type="logic">
+      <obj_property name="ElementShortName">x_clk</obj_property>
+      <obj_property name="ObjectShortName">x_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/Piscador_i/clk_1Hz" type="logic">
+      <obj_property name="ElementShortName">clk_1Hz</obj_property>
+      <obj_property name="ObjectShortName">clk_1Hz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/x_reset" type="logic">
+      <obj_property name="ElementShortName">x_reset</obj_property>
+      <obj_property name="ObjectShortName">x_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/x_enable" type="logic">
+      <obj_property name="ElementShortName">x_enable</obj_property>
+      <obj_property name="ObjectShortName">x_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/FMS_i/estado_atual" type="other">
+      <obj_property name="ElementShortName">estado_atual</obj_property>
+      <obj_property name="ObjectShortName">estado_atual</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/FMS_i/prox_estado" type="other">
+      <obj_property name="ElementShortName">prox_estado</obj_property>
+      <obj_property name="ObjectShortName">prox_estado</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/x_door" type="logic">
+      <obj_property name="ElementShortName">x_door</obj_property>
+      <obj_property name="ObjectShortName">x_door</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/Contador_i/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/Contador_i/flag_cont" type="logic">
+      <obj_property name="ElementShortName">flag_cont</obj_property>
+      <obj_property name="ObjectShortName">flag_cont</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/x_window" type="array">
+      <obj_property name="ElementShortName">x_window[2:0]</obj_property>
+      <obj_property name="ObjectShortName">x_window[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/x_password" type="array">
+      <obj_property name="ElementShortName">x_password[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x_password[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/Piscador_i/policia" type="logic">
+      <obj_property name="ElementShortName">policia</obj_property>
+      <obj_property name="ObjectShortName">policia</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/Piscador_i/led" type="array">
+      <obj_property name="ElementShortName">led[13:0]</obj_property>
+      <obj_property name="ObjectShortName">led[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/Piscador_i/policia" type="logic">
+      <obj_property name="ElementShortName">policia</obj_property>
+      <obj_property name="ObjectShortName">policia</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/Contador_i/unidade" type="array">
+      <obj_property name="ElementShortName">unidade[3:0]</obj_property>
+      <obj_property name="ObjectShortName">unidade[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/Contador_i/count_u" type="array">
+      <obj_property name="ElementShortName">count_u[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count_u[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/Contador_i/dezena" type="array">
+      <obj_property name="ElementShortName">dezena[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dezena[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_level_tb/Top_level_i/Contador_i/count_d" type="array">
+      <obj_property name="ElementShortName">count_d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count_d[3:0]</obj_property>
+   </wvobject>
+</wave_config>

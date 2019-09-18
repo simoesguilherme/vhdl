@@ -1,0 +1,67 @@
+; =========================================================
+; function: Shift and rotate vector
+; input register:
+; s1: swifts (vector)
+; s2: function
+; output register:
+; s3: result
+; temp register: s0
+; =========================================================
+
+ CONSTANT vector_1, 00                                 ; vector = 00H
+ CONSTANT vector_2, 01                                 ; vector = 01H
+ CONSTANT led, 02                                     ; led = 02H
+
+
+setup:
+                    INPUT     	  s1, vector_1	      ; s1 <= entrada
+                    INPUT     	  s2, vector_2        ; s2 <= controle
+		    		INPUT     	  s3, vector_2	  	  ; s3 <= quantidade, loop index
+		    		INPUT     	  s4, vector_2	  	  ; s4 <= modo
+		    		AND	      s1, FF		  	  ; s1 and 1111 1111
+		    		AND	      s2, 1F  	  		  ; s2 and 0001 1111
+		    		AND	      s3, 1C  	  		  ; s3 and 0001 1100
+	  			  	AND	      s4, 03		  	  ; s4 and 0000 0011
+loop:
+                    SR0       s4                  ; shift lower byte right,
+							  					  ; lsb of s2 to C
+                    JUMP      NC, left            ; lsb is 0
+                    JUMP      C, right            ; lsb is 1
+left:
+                    SR0       s4                  ; shift lower byte right,
+							  					  ; lsb of s2 to C
+                    JUMP      NC, shift_l         ; lsb is 0
+                    JUMP      C, rotate_l         ; lsb is 1
+shift_l:
+					OUTPUT       s1, led             ; led <= s1
+					SL0       s1                  ; shift left 1-bit inserting ‘0’
+                    OUTPUT    	  s1, led             ; led <= s1
+                    SUB       s3, 01              ; dec loop index
+                    JUMP      NZ, shift_l            ; repeat until i=0
+                    JUMP      setup               ; jump to setup
+rotate_l:
+		 			OUTPUT       s1, led             ; led <= s1
+					RL        s1                  ; rotate left 1-bit.
+                    OUTPUT    	  s1, led             ; led <= s1
+                    SUB       s3, 01              ; dec loop index
+                    JUMP      NZ, rotate_l        ; repeat until i=0
+                    JUMP      setup               ; jump to setup
+right:
+                    SR0       s4                  ; shift lower byte right,
+							  					  ; lsb of s2 to C
+                    JUMP      NC, shift_r         ; lsb is 0
+                    JUMP      C, rotate_r         ; lsb is 1
+shift_r:
+					OUTPUT       s1, led             ; led <= s1
+					SR0       s1                  ; shift right 1-bit inserting ‘0’
+                    OUTPUT    	  s1, led             ; led <= s1
+                    SUB       s3, 01              ; dec loop index
+                    JUMP      NZ, shift_r         ; repeat until i=0
+                    JUMP      setup               ; jump to setup
+rotate_r:
+		 			OUTPUT       s1, led             ; led <= s1
+					RR        s1                  ; rotate rotate 1-bit.
+                    OUTPUT       s1, led             ; led <= s1
+                    SUB       s3, 01              ; dec loop index
+                    JUMP      NZ, rotate_r        ; repeat until i=0
+                    JUMP      setup               ; jump to setup

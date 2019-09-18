@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Elevador.srcs/sources_1/new/Algoritmo.vhd" \
+"../../../../Elevador.srcs/sources_1/new/Comparador.vhd" \
+"../../../../Elevador.srcs/sources_1/new/Contador_U_D.vhd" \
+"../../../../Elevador.srcs/sources_1/new/Display.vhd" \
+"../../../../Elevador.srcs/sources_1/new/FMS.vhd" \
+"../../../../Elevador.srcs/sources_1/new/Temporizador.vhd" \
+"../../../../Elevador.srcs/sources_1/new/Top_Level.vhd" \
+"../../../../Elevador.srcs/sim_1/new/tb_top_level.vhd" \
+
+# Do not sort compile order
+nosort
